@@ -1,0 +1,13 @@
+php artisan make:livewire AdminSellerHeaderProfileInfo
+
+php artisan make:livewire AdminProfileTaps
+
+php artisan make:livewire AdminSettings
+php artisan make:model GeneralSetting -m
+php artisan make:migration update_general_settings_table --table=general_settings
+php artisan make:controller CategorieController -m 
+
+php artisan DataTables:make Categorie
+php artisan make:controller CategorieController --resource
+
+php artisan make:model Product -m
